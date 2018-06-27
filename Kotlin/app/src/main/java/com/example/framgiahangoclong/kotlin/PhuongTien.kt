@@ -4,7 +4,7 @@ import android.os.Parcel
 import android.os.Parcelable
 
 /**
- * class Phuongtien phải có ít nhất 1 primary constructor có tham số
+ * class Phuongtien phải có ít nhất 1 primary constructor có tham số,mục đich chỉ lưu giữ dữ liệu
  */
 data class PhuongTien(val name : String) : Parcelable {
   constructor(parcel: Parcel) : this(parcel.readString())

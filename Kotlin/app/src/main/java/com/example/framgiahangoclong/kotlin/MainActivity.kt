@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
     textView.text = "aaaa"
     Toast.makeText(this, textView.text, Toast.LENGTH_SHORT).show()
 
+    var holdData : HoldData = HoldData("ád", 1)
+
     button.setOnClickListener {
       var editString: String = edittext.text.toString()
       var editInt : Int = (edittext.text.toString()).toInt()
